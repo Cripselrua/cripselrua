@@ -6,3 +6,10 @@ $(document).ready(function() {
     
     });
 });
+
+$(document).ready(function() {
+    $('.menu_link').click(function(event) {
+        $('.menu_icon, .menu_body').removeClass('active');
+        $('body').removeClass('lock');
+    });
+});
