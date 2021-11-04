@@ -1,0 +1,306 @@
+.menu_body{
+    display: none;
+    
+}
+
+
+@media screen and ( max-width: 767px ){
+body.lock{
+    overflow: hidden;
+}
+.menu_body{
+    display: block; 
+    height: max-content; 
+    position: fixed;
+    right: 22%;
+    top: 20px; 
+    overflow: auto;
+    right: -1300px;  
+    transition: all 0.7s ease 0s; 
+}
+.menu_body.active{
+    right: 12px;
+        top: 10px;
+}
+.burger_tel{
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    
+    display: block;
+    
+    display: fixed;  
+    color: #001E42;
+    display: flex;
+}
+.tell_burger1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* dark */
+
+    color: #001E42;
+}
+.tell_burger2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* dark */
+
+    color: #001E42;
+}
+
+.tell_burger1::after{
+    content:'lifecell';
+    margin-left: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    color:#001E42 ;
+    line-height: 19px; 
+    
+    margin-top: 0px;
+    font-size: 12;
+    min-width: 229px;
+}
+.tell_burger2::after{
+    content: 'Vodafone' ;
+    margin-left: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    color:#001E42 ;
+    line-height: 19px; 
+    
+    margin-top: 0px;
+    font-size: 12;
+    min-width: 229px;
+}
+.content_burger{
+    background-color: rgb(7 240 201);
+    border-radius: 5px;
+    display: flex;
+    height: 361px;
+        width: 323;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* ----------------------------------------- */
+.menu_icon{
+    
+    z-index: 100;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+}
+.menu_icon.active:before{
+    transform: rotate(44deg);
+    top: 8px;
+}
+.menu_icon.active::after{
+    transform: rotate(-44deg);
+    bottom: 8px;
+}
+.menu_icon.active span{
+    transform: scale(0);
+}
+    .menu_icon span,
+    .menu_icon::before,
+    .menu_icon::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.5s ease 0s;
+        background-color: #FFFFFF;
+    }
+    .menu_icon::before,
+    .menu_icon::after{
+        content: "";
+    }
+    .menu_icon::before{
+        top: 0;
+    }
+    .menu_icon::after{
+        bottom: 0;
+    }
+    .menu_icon span{
+        top: 50%;
+        transform: scale(1) translate(0px -50%);
+        transition: all 0.5s ease 0s;
+   }
+/* ============================burger meny========================================== */
+.burger_button {
+    
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 13px 24px;
+    border: 1px solid #0f2f2f;
+    border-radius: 2px;
+    background: #00FEFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00FEFF), to(#00FEFF));
+    background: -moz-linear-gradient(top, #00FEFF,#00FEFF);
+    background: linear-gradient(to bottom, #00FEFF, #00FEFF);
+   
+    font: normal normal bold 14px arial;
+    color: #002047;
+    text-decoration: none;
+}
+.burger_button:hover,
+.burger_button:focus {
+    border: 1px solid #035757;
+    background: #00FEFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00FEFF), to(#00FEFF));
+    background: -moz-linear-gradient(top, #00FEFF,#00FEFF);
+    background: linear-gradient(to bottom, #00FEFF, #00FEFF);;
+    color: #002047;
+    text-decoration: none;
+    -webkit-box-shadow: #0f2f2f 0px 0px 10px 0px;
+    -moz-box-shadow: #0f2f2f 0px 0px 10px 0px;
+    box-shadow: #0f2f2f 0px 0px 10px 0px;
+}
+.burger_button:active {
+    background: #979797;
+    background: -webkit-gradient(linear, left top, left bottom, from(#979797), to(#bdbdbd));
+    background: -moz-linear-gradient(top, #02c2c2, #02c2c2);
+    background: linear-gradient(to bottom, #02c2c2, #02c2c2);
+    
+}
+
+/* ===================================================================== */
+.burger_button {
+      
+      
+      color: rgba(0, 32, 71, 1);
+      
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      justify-content: space-evenly;
+      width: 234px;
+      align-items: center;
+      
+      
+        margin: 0px;
+        margin-left: 0px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      
+  }
+  .burger_button .arrow-3-icon {
+      margin-left: 5px;
+      position: relative;
+      top: 0px;
+      transition: transform 0.3s ease;
+      vertical-align: middle;
+  }
+  .burger_button .arrow-3-iconcircle {
+      transition: stroke-dashoffset .3s ease;
+      stroke-dasharray: 95;
+      stroke-dashoffset: 95;
+  }
+  .burger_button .arrow-3-icon {
+      transform: translate3d(5px, 0, 0);
+  }
+  .burger_button:hover .arrow-3-iconcircle {
+      stroke-dashoffset: 0; 
+    }  
+      
+}
+/* ================================================================================ */
+@media screen and ( max-width: 767px ){
+    .header_menu{
+        display: none;
+    }
+    .name_tel{
+        display: none;
+        font-family: Montserrat;
+
+    }
+    .cl-effect-21{
+        display: flex;
+       
+        display: flex;
+        height: 58px;
+        justify-content: space-between;
+        flex-direction: column;
+}
+.menu_item a{
+    color: #001E42;
+}
+.menu_item1 a{
+    color: #001E42;
+}
+.logo_it{
+    color:#00FEFF;
+}
+.logo_SRK{
+    color: #001E42;
+}
+._tell{
+    font-size: 14px;
+}
+.burger_tel{
+    align-items: center;
+}
+.ru_ua{
+    display: flex;
+    width: 87px;
+    justify-content: space-evenly;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+/* dark */
+
+color: #001E42;
+}
+.cl-effect-21{
+    margin-left: 25px;
+}
+.burger_button{
+    width: 294px;
+}
+    }
+
+    @media screen and ( max-width: 400px ){
+        .menu_body.active{
+        right: 0px; 
+        width: 100vw;
+        top: -0.9px;
+        }
+        .content_burger{
+            height: 550px;
+        }
+       
+    }
+    @media screen and ( min-width: 585px ){
+        .menu_icon{
+            right: -19px;
+        }
+
+    }

@@ -1,0 +1,80 @@
+#DivContent{
+    position: sticky;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup__bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 376px;
+    height: 383px;
+    padding: 25px;
+    transition: 0.5s all;
+    border-radius: 25px;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 150;
+}
+/* =============================================================== */
+.wrapper__popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Jackdaw{
+    width: 93px;
+    height: 58px;
+    border: 4px solid #001E42;
+    border-top: 0px;
+    border-right: 0px;
+    transform: rotate(314deg);
+    margin-top: 58px;
+}
+.popup_text{
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: center;
+    color: #444444;
+    margin-top: 85px;
+}
