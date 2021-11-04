@@ -1418,6 +1418,7 @@ textarea{
     height: max-content;
 }
 .checkbox{
+    cursor: pointer;
     position: relative;
 }
 .checkbox_label{
