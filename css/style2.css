@@ -1458,6 +1458,37 @@ textarea{
 .checkbox_input:checked + .checkbox_label:after{
     opacity: 1;
 }
+.checkbox._error{
+    background-color:rgba(189, 0, 0, 0.351);
+    box-shadow: 0px 0px 4px 6px rgb(255 0 0 / 45%);
+}
+.form_input._error {
+    box-shadow: 0px 0px 4px 6px rgb(255 0 0 / 45%);
+}
+/* ------------------------------форма отправки --------------------------------- */
+.checkbox_input._error{
+    box-shadow: 0px 0px 4px 6px rgb(255 0 0 / 45%);
+}
+.form__body{
+    position: relative;
+}
+.form__body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 51, 51, 51, 0.9) url(../img/gif/loading.gif) center / 70px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+    z-index: 500;
+}   
+.form__body._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
 /* --------------------------------------------------------------------------- */
 .PRICE_IT {
        
