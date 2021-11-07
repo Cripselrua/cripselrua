@@ -42,7 +42,7 @@ body{
     font-weight: 400;    
     margin: 0px auto;
     max-height:100px; 
-    
+    margin: 0 auto;
     /* box-sizing: border-box; */
     
     /* border: 5px solid rgba(216, 4, 145, 0.37); */
